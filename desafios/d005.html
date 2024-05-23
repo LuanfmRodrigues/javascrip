@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Conversor de medidas</h1>
+    <button onclick="converter()">Converter</button>
+    <div id="res"></div>
+
+    <script>
+        function converter(){
+            var res = document.getElementById('res')
+            var metro = prompt('Digite um distancia em metros(m)')
+            var km = metro / 1000 
+            var hm = metro / 100
+            var dam = metro / 10
+            var dm = metro / 0.1
+            var cm = metro / 0.01
+            var mm = metro / 0.001
+
+            res.innerHTML =`<strong>A Distancia de ${metro}metros , corresponde a ...</strong><br><br> ${km} Quilomentros (Km) <br><br> ${hm}hectometros (Hm)<br><br>${dam}decâmetro (Dam)<br><br>${dm}Decímetros(Dm)<br><br>${cm}Centimetors(CM)<br><br>${mm}Milimtros(MM)`
+           
+          
+
+            
+        }
+    </script>
+    
+</body>
+</html>

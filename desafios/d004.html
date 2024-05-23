@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 04</title>
+</head>
+<body>
+    <h1>Calculando</h1>
+    <button onclick="somar()">Comprar Produto</button>
+    <section id="res">
+
+    </section>
+
+    <script>
+        function somar(){
+            var nome = prompt('Qual produto você esta compando?')
+            var v1 = Number(prompt('Quanto custa o valor do produto que esta Compando?'))
+            var v2 = Number(prompt('Qual o valor que você teu para comprar o '+nome+'?'))
+            var res = + v1 - v2
+            alert('Você comprou o '+nome+' que custou R$'+v1+'. e deu R$'+v2+' em dinheiro e vai receber de troco o valor de troco de R$'+res+'.')
+        }
+    </script>
+    
+</body>
+</html>

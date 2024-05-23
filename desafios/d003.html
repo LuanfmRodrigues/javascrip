@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 03</title>
+</head>
+<body>
+    <h1>Antes de Depois</h1>
+    <button onclick="somar()">Antecessor e Sucessor</button>
+    <section id="res"></section>
+
+    <script>
+        function somar() {
+            var valor = Number(prompt('Digite um numero inteiro qualquer'))
+            var sub = valor - 1
+            var som = valor + 1 
+            alert('Antes de ' +valor+' temos o número '+ sub+'.Depois de '+valor+' temos o número '+som+'')
+
+        }
+    </script>
+</body>
+</html>

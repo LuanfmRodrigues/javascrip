@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Converso de moeda R$ ----- US$</h1>
+    <button onclick="conversor()">Converter</button>
+    <div id="res"></div>
+
+    <script>
+        var res = document.getElementById('res')
+        var cot =Number(prompt('Olá,antes de tudo. Quanto está o Valor de dólar hoje? '))
+        function conversor(){
+            var reais = Number(prompt('Qaunto em reais você quer converter em dólar?'))
+            var dolar = reais/cot
+            res.innerHTML = `Com o valor de R$${reais} você consegue compra em dolar o valor de US$${dolar} `
+         }
+
+    </script>
+    
+</body>
+</html>

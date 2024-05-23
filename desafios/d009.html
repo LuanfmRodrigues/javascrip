@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 09</title>
+</head>
+<body>
+    <h1>Reajusta Salarial</h1>
+    <button onclick="calcular()">Reajuste</button>
+    <div id="res"></div>
+
+    <script>
+        function calcular(){
+            let res = document.getElementById('res')
+            let nome = prompt('Qual é o nome do funcionario?')
+            let sal = Number(prompt('Qaul é o atual salario do colaborador '+nome+'?'))
+            let por = Number(prompt('Quantos porcento o colaborador '+nome+' vai receber ?'))
+            let nov = (sal/100)* por
+            let fim = nov + sal
+
+            res.innerHTML = `<h2>O colaborador ${nome} Vai receber um aumento salario!</h2><br><br>o salario atual é R$${sal}.<br>Com um aumento de ${por}%, O salario vai ter um aumentar R$${nov} no proximo mês.<br> vai passar a ganha o valor total de R$${fim}.   `
+
+        }
+    </script>
+</body>
+</html>

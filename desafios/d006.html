@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 06</title>
+</head>
+<body>
+    <h1>Conversor de Temperatura</h1>
+    <button onclick="converter()">Converter</button>
+    <div id="res"></div>
+
+    <script>
+        function converter(){
+            var res = document.getElementById('res')
+            var cel = Number(prompt('Digite uma temperatura em *C (celsius)'))
+            var kel = cel + 273
+            var fah = 1.8 * cel + 32
+
+            res.innerHTML = `A temperatura de ${cel}ºC, Corresponde a . <br><br>${kel}ºK(Kelvin)<br><br>${fah}ºF(Fahrenheit)`
+            
+        }
+    </script>
+</html>

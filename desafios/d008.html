@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio08</title>
+</head>
+<body>
+    <h1>Calculando desconto</h1>
+    <button onclick="calcular()">Desconto de 10%</button>
+    <div id="res"></div>
+
+    <script>
+        function calcular(){
+            let res = document.getElementById('res')
+            let prod = prompt('Qual produto você esta procurando?')
+            let val = Number(prompt('Qual é o preço do '+ prod+' ?'))
+            let des = (val / 100)*10
+            let fim = val - des
+
+            res.innerHTML =`<h1>Calculando desconto de 10% para ${prod}</h1><br><br><p>O preço original do produto era R$${val}.<br>Você acaba de ganhar R$${des} de desconto (10%).<br> O valor final que vai pagar é R$${fim}</p>`
+
+            
+        }
+    </script>
+
+
+</body>
+</html>
